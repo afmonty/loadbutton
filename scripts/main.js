@@ -1,10 +1,13 @@
 //listen for click on button
 
-var btn = document.querySelector("button");
-console.log(btn);
-btn.addEventListener("click", loader);
-var clickCounter = 0;
-var loader = function(){
+var loadBtn = document.querySelector("button");
+
+loadBtn.addEventListener("click", function(){
+
+	document.querySelector("button").innerHTML = "Loading...";
+});
+console.log("suck it Javascript, I win!!");
+document.querySelector("button").innerHTML = "Submit";
 	
-};
-console.log();
+
+
